@@ -11,7 +11,7 @@ const WorkoutDetails = ({ workout }) => {
       return
     }
 
-    const response = await fetch('/api/workouts/' + workout._id, {
+    const response = await fetch('https://task36-iyjd.onrender.com/api/workouts/' + workout._id, {
       method: 'DELETE',
       headers: {
         'Authorization': `Bearer ${JSON.parse(localStorage.getItem('user')).token}`
