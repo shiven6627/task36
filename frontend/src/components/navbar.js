@@ -4,7 +4,7 @@ import {useLogout} from '../hooks/useLogout'
 import { useAuthContext } from '../hooks/useAuthContext'
 
 
-const navbar = () => {
+const Navbar = () => {
 
     const {logout} = useLogout()
     const {user} = useAuthContext()
@@ -38,4 +38,4 @@ const navbar = () => {
      )
 }
 
-export default navbar
+export default Navbar
